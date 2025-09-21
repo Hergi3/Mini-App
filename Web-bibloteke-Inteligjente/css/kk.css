@@ -1,0 +1,290 @@
+body { /* Stilizimi i elementeve bazë */
+    font-family: Arial, sans-serif; /* Përdor fontin Arial ose një font të ngjashëm sans-serif */
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    width: 97%;/* Vendos gjeresine 100% */
+    background-color: #555;
+    overflow: auto;/* Lejon shfaqjen e scroll-it nëse përmbajtja tejkalon gjerësinë e navbar-it */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px; 
+    
+  }
+   
+   .navbar a { /* Stilojme navbar links */
+    float: left; /* Vendos pozicionimin e tekstit majtas */
+    text-align: center; /* Qendron tekstin në qendër të elementit */
+    padding: 12px; /* Shto hapësirë përreth tekstit */
+    color: white; /* Ngjyra e tekstit */
+    text-decoration: none; /* Hiq nënvizimin e lidhjeve */
+    font-size: 17px; /* Madhësia e tekstit */
+   }
+   
+   .navbar a:hover { /* Ndryshimi i ngjyres kur vendoset mouse tek links  */
+    background-color: #000;
+   }
+   
+   .active {  /* Stilimi i linkut qe eshte aktiv */
+    background-color: #6c5b1e;
+   }
+   
+   
+   /* Stili për elementin nav */
+   nav {
+    background-color:white; /* Ngjyra e sfondit */
+    padding: 20px; /* Hapësira e brendshme */
+    display: inline-block; /* Tregon se si duhet të paraqitet */
+    width: 25%; /* Gjerësia e kutisë */
+    vertical-align: top; /* Vendos lartësinë e elementit */
+   }
+   
+   
+   /* Stili për listat e navigimit */
+   nav ul {
+    list-style-type: disc;
+    padding: 0;
+   }
+   
+   
+   /* Stili për çdo artikull në listën e navigimit */
+   nav ul li {
+    margin-bottom: 10px;
+    padding: 1px;
+   }
+   
+   
+   /* Stili për lidhjet në listën e navigimit */
+   nav ul li a {
+    text-decoration: dotted; /* Stili i vijës */
+    color: #133a08; /* Ngjyra e tekstit */
+   }
+   
+   a:hover {
+    color: #8c6c46; /* Ngjyra e tekstit kur mouse është mbi link */
+    padding: 5px; /* Shton një hapësirë 5px rreth link-ut kur mouse është mbi të */
+ }
+ 
+ 
+  /* navbar link aktiv */
+    .active {
+    background-color: #8c6c46;
+ }
+ 
+ 
+
+ @media screen and (max-width: 500px) { /* Stilizimet për ekranin me gjerësi maksimale 500px */
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+
+  .container {
+    max-width: 1200px; /* Vendos gjerësinë maksimale*/
+    margin: 0 auto; /* Vendos margin e sipërme dhe të poshtme në zero dhe vendos container në qendër */
+    padding: 0 20px; /* Shton një padding 0 në anët e container dhe 20px në pjesën e sipërme dhe të poshtme */
+}
+
+
+.hero {
+    background-color: #b39166;; /* Ngjyra e background */
+    color: #fff; /* Ngjyra e tekstit */
+    padding: 80px 0; /* Hapësira e brendshme */
+    text-align: center; /* Vendos tekstin në qendër */
+}
+
+.hero h2 {
+    margin-bottom: 300px; /* Hapësira në fund të titullit */
+}
+
+.hero p {
+    margin-bottom: 300px; /* Hapësira në fund të paragrafit */
+}
+ 
+.hero img { 
+    display: block; /* Paraqet imazhin si bllok */
+    margin: 50px auto; /* Vendos imazhin në qendër dhe shton një hapësirë në krye dhe në fund */
+    max-width: 50%; /* Gjerësia maksimale e imazhit */
+    height: auto; /* Lartësia auto e imazhit */
+}
+
+.hero {
+    background-image: url('../imazhe/library.webp'); /* Vendos fotografine si background vetem për kete container */
+        background-size: cover; 
+        background-position: center; /* Vendos background-in në qender */
+        color: #fcf8f8; /* Ngjyra e tekstit për përmbajtjen në këtë pjesë */
+        padding: 50px; /* Hapësira përmbajtëse */
+        text-align: center;
+}
+
+.features {
+    background-color: #8c6c46;;
+    padding: 50px 0; 
+    text-align: center; 
+}
+
+.features h2 {
+    margin-bottom: 20px; /* Hapësira në fund të titullit */
+}
+
+.feature {
+    display: inline-block; /* Paraqet elementin si bllok me dimensione të përshtatshme */
+    width: 30%; /* Gjerësia e elementit */
+    padding: 20px; /* Hapësira e brendshme e elementit */
+    margin: 20px; /* Hapësira përreth elementeve */
+    background-color: #fff; /* Ngjyra e sfondit të elementit */
+    border-radius: 15px; /* Krijimi i rrathëve tek elementi */
+    box-shadow: 0 0 10px rgba(221, 4, 4, 0.1); /* Efekti i hijes */
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature img {
+    display: block; 
+    margin: 0 auto 20px; 
+    max-width: 80%; /* Gjeresia maksimale: 80% */
+    height: auto; /* Lartesia: auto */
+}
+.feature p {
+    margin-bottom: 20px; 
+}
+
+.news {  /* Stili për seksionin e lajmeve tek faqja kryesore */
+    background-color: #8c6c46;; /* Ngjyra e sfondit */
+    padding: 50px 0; /* 50px në të dyja anët */
+    text-align: center; /* Vendosja e  tekstit: në qendër */
+}
+.news h2 {
+    margin-bottom: 20px; 
+}
+h1 {
+    font-size: 26px;
+    text-align: center; /* Vendosja e tekstit: në qendër */
+}
+.news-item {
+    background-color: #fff;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hijezim  */
+}
+.news-item h3 {
+    margin-bottom: 10px; 
+}
+ /*kafshet e humbura*/
+ 
+ 
+ .lost-box { /*Stilimi i pjesës së postimit të kafshëve të humbura */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* 4 produkte në një rresht */
+    gap: 20px; /* hapësir midis elementeve: 20px */
+    max-width: 900px; /* Gjeresia maksimale: 900px */
+    margin: 20px auto; /*  20px në të dyja anët, auto për qendrim në mes */
+}
+.lost {
+    background-color: #8c6c46;; /* Ngjyra e sfondit:  */
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; /* Drejtimi në kolonë */
+    justify-content: space-between; 
+    text-align: center; 
+}
+.lost img {
+    max-width: 65%; /* Gjeresia maksimale: 60% */
+    height: auto; 
+    border-radius: 10px; 
+    margin: 0 auto 10px; /* Qendërzimi i fotove në mes horizontalisht */
+    display: block;
+}
+.lost-info h3 {
+    flex-grow: 1; /* Rritje elastike: 1 */
+}
+.lost-info p {
+    margin-bottom: 5px; /* Margin e fundit: 5px */
+    font-size: 14px; /* Madhësia e fontit: 14px */
+}
+
+#chat { /*stilon chat-in*/
+    width: 159px; /* Gjeresia: 150px */
+    margin: 0; 
+    padding: 20px; 
+    border: 10px solid #ccc; 
+    border-radius: 20px; 
+    background-color: #8c6c46;; 
+    box-shadow: 0 2px 5px rgba(61, 39, 39, 0.1);
+}
+#message-container { /*stilon përmbajtjen e pjesës ku do dërgohen mesazhet e raportimit*/
+    max-height: 300px; /* Lartësia maksimale: 300px */
+    overflow-y: auto; /* Overflow-y: shfaq tërheqjen vertikale */
+    margin-bottom: 10px; 
+    padding: 21px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #8c6c46;; 
+}
+
+footer{  /* Stilojme footerin */    
+    /* Stilojme footerin */
+      background:  #795128;
+      color: #fefefe;
+      text-align: center;
+      position: absolute;
+      top: 2600px;
+      height: auto;
+      width: 100vw;
+      left: 0cm;
+
+      padding-top: 2px;
+      }
+    
+    #fundi,#te_drejtat{ /* Stilojme paragrafin e fundit */
+      color: #f6f6f6;
+      text-align: center;
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 16px;
+    }
+    
+    .socials{  /* Sitlojme listen e parendeitur*/
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem 0 1rem 1rem;
+      
+   }
+    
+   .socials li{   /* Stilojme distancen qe do kene li nga njera tjetra */
+      margin:  10px;
+   }
+    
+   .socials a{  /* Stilojme pamjen vizuale te ikonave ngjyrat dhe borderat */
+      text-decoration: none;
+      color: #fff;  /* Ngjyra e ikonave */
+      border: 1.31px solid white;
+      padding: 5px;
+      border-radius: 50%;
+   }
+    
+   .socials a i{  /* Stilojme madhesine e ikonave dhe rratheve ku ngjodhen*/
+      font-size: 1.0rem;
+      width: 20px;
+   }
+    
+   .socials a:hover i{ /* Ndryshimi i ngjyres kur vendoset mouse tek ikonat  */
+      color: #9d6099;
+   }
+
+

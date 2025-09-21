@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  <!--Lidhim faqen me font awesom per te shfaqur ikonat e rrjeteve sociale-->
+    <title>Kontakt</title>
+</head>
+<body>
+  <div class="navbar">
+    <a  href="../html/kk.html"><i class="fa fa-fw fa-home"></i> Home</a>  <!-- Klasa "active" përdoret për të treguar faqen aktive -->
+    <a  href="../html/about.html"><i class="fa fa-info"></i> About</a>
+    <a  href="../html/Sherbime.html"><i class="fa fa-cogs"></i> Shërbime</a>
+    <a  href="../html/produkte.html"><i class="fa fa-cart-plus"></i> Produkte</a>
+    <a class ="active" href="../html/kontakt.html"><i class="fa fa-user-circle"></i> Kontakte</a>
+  </div>
+      <br><br>
+      <form action="#" method="post" id="fi">  <!--Krijimi i nje form qe te sherbej per kontaktimin-->
+        <h1>Kontakto me ne!</h1>
+        <p>Ju lutemi, merrni një moment për të na kontaktuar, do t'ju kontaktojmë së shpejti.</p>
+      
+        <div class="column">
+          <label>Emri Mbiemri </label>
+          <input type="text"  id="the-name">
+      
+          <label>Email</label>
+          <input type="email"  id="the-email">
+      
+          <label>Numer telefoni</label>
+          <input type="tel" id="celulari"  pattern="[0-9]{3}-[0-9]{7}" placeholder=" 06X-XXXXXXX" required><br>
+     
+        
+        </div>
+        <div class="column">
+          <label>Shkruaj mesazhin tuaj</label>
+          <textarea id="the-message"></textarea>
+          <input type="submit" value="Dergo">
+        </div>
+      </form>
+
+
+      <footer> 
+
+        <h3>Putrat</h3> <!--Krijojme pjesen fundore te webit-->
+    
+          <p id="fundi">Faleminderit që zgjodhët të vizitoni bibliotekën tonë!
+            Ne jemi të përkushtuar për të promovuar dashurinë për librat dhe kulturën e leximit. Me një koleksion të pasur librash dhe aktivitete për të gjitha moshat, qëllimi ynë është të frymëzojmë dhe të ndajmë dijen me komunitetin.
+            Ju falenderojmë për mbështetjen tuaj dhe ju ftojmë të na ndiqni në rrjetet sociale për t'u informuar mbi eventet dhe aktivitetet tona. 📚
+            Biblioteka juaj – dera drejt dijes dhe imagjinatës!</p>
+    
+           <ul class="socials"> <!--Krijojme listen e rrjeteve sociale te wevit ku do kontaktojne klientet-->
+            <li><a href="https://web.facebook.com/?_rdc1&_rdr"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/?next=%2F"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://login.yahoo.com/"><i class="fa-brands fa-yahoo"></i></a></li>
+         </ul>
+         <p id="te_drejtat">&copy;Të gjitha të drejtat e rezervuara</p> <!--Copyright-->
+    
+          
+    </footer>
+
+
+    
+</body>
+</html>

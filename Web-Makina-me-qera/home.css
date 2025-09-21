@@ -1,0 +1,534 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #000; /* Background black for luxury feel */
+}
+
+header {
+    background-color: #222121; /* Black header for luxury */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* E ngjit tekstin lart */
+    padding-top: 20px; /* Mund ta ndryshosh sipas nevojës */
+}
+
+.hero-content {
+    position: relative;
+    top: -1px; /* Mund ta ndryshosh për ta afruar me imazhin */
+    text-align: center;
+}
+.hero-image img {
+    margin-bottom: -150px; /* Ul hapësirën mes imazhit dhe tekstit */
+}
+
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+
+.btn {
+    background-color: #FF0000; /* Red for luxury */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Section Containers */
+.section-container {
+    padding: 40px 20px;
+    background-color: #111111; /* Dark gray for luxury feel */
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.container h2 {
+    color: #d60707;
+    
+}
+
+
+
+
+
+.cars h2, .services h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FF0000; /* Red accent for headings */
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters select, .filters input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #FF0000; /* Red borders for filters */
+}
+
+/* Car Slider */
+.car-slider {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.car-list {
+    display: flex;
+    gap: 20px;
+    animation: slide 20s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.car-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    border: 1px solid #FF0000;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.car-item button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.car-item button:hover {
+    background-color: #cc0000;
+}
+
+/* Service Section */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(132, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    border: 1px solid #FF0000;
+}
+
+/* Contact Section */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+.contact h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    color:  #d60707;
+}
+/* Contact Section */
+.contact {
+    background-color: #111111;/* Ngjyrë gri për seksionin e kontaktit */
+    padding-bottom: 50px;
+}
+
+
+.location {
+    margin: 0 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vendos inputet dhe butonin në qendër */
+    text-align: center; /* Vendos çdo element në qendër, duke përfshirë butonin */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 42%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color:  #d60707;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Për të shtuar hapësirë nga inputet e tjera */
+}
+
+/* Dark Sections */
+.hero, footer {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #222121;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.car-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.car-item {
+    flex: 1 1 200px; /* Kjo e bën që secila makinë të ketë një gjerësi minimale */
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+.car-item img {
+    width: 100%;
+    height: auto;
+}
+.car-list-horizontal {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+.car-item-horizontal {
+    min-width: 250px;
+    margin-right: 20px;
+    text-align: center;
+}
+.car-item-horizontal img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Përdorim lartësi të plotë për ekranin */
+    overflow: hidden;
+    background-color: #f2f2f2; /* Ngjyra e butë e sfondit */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%; /* Pozicionojmë mesazhin në qendër */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* E bëjmë tekstin të bardhë për kontrast të mirë */
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfond i errët gjysmë transparent për kontrast të mirë */
+    border-radius: 10px; /* Rrethim i butë për tekstin */
+}
+
+.hero-content h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.hero-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #111111;
+    color: #fff;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #222121;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    font-size: 1.2rem;
+    color: #FF0000;
+}
+
+/* Separated feedback section */
+.feedback {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feedback h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.feedback .form-group {
+    margin-bottom: 10px;
+}
+
+.feedback .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.feedback .form-group input,
+.feedback .form-group textarea,
+.feedback .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback .form-group textarea {
+    resize: vertical;
+}
+
+.feedback .form-group button {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback .form-group button:hover {
+    background-color: #cc0000;
+}
+
+
+
+.testimonial-feedback {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.testimonial-cards {
+    flex: 1;
+    min-width: 55%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Ngjyrë natyrale për tekstin */
+}
+
+.review-name {
+    color: #333; /* Emrat e reviews në ngjyrë gri të errët për kontrast të mirë */
+    font-weight: normal;
+}
+
+.feedback-form {
+    flex: 0.6; /* Container më i madh për feedback */
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.4rem; /* Input më të vogla */
+    font-size: 0.8rem; /* Madhësi më e vogël e fontit */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px; /* Vendosni lartësinë e dëshiruar për textarea */
+}
+
+.btn.leave-feedback-btn {
+    background-color: #e74c3c; /* Butoni blu */
+    color: #fff;
+    padding: 0.5rem 1.5rem; /* Butoni drejtkëndësh */
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn.leave-feedback-btn:hover {
+    background-color: #c0392b;; /* Ngjyrë më e errët kur kalon mbi të */
+}
+
+.btn {
+    background-color: #e74c3c; /* Butoni i kuq */
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Ngjyrë më e errët kur kalon mbi të */
+}
+
+/* Hidden Feedback Form initially */
+.feedback-form {
+    display: none;
+}

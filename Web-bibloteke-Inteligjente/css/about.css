@@ -1,0 +1,151 @@
+
+body{    /* stilojme trupin e webit duke vendosur ngjyren e backgroundit , llojin e shkrimit e marchinat me pading ne 0 qe te kemi pamje vizuale sa me te mire  */
+  background-color:   white; 
+  font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  padding: 0px; 
+  }  
+
+  .navbar {
+   width: 97%;/* Vendos gjeresine 100% */
+   background-color: #555;
+   overflow: auto;/* Lejon shfaqjen e scroll-it nëse përmbajtja tejkalon gjerësinë e navbar-it */
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 10px; 
+   
+ }
+  
+  .navbar a { /* Stilojme navbar links */
+   float: left; /* Vendos pozicionimin e tekstit majtas */
+   text-align: center; /* Qendron tekstin në qendër të elementit */
+   padding: 12px; /* Shto hapësirë përreth tekstit */
+   color: white; /* Ngjyra e tekstit */
+   text-decoration: none; /* Hiq nënvizimin e lidhjeve */
+   font-size: 17px; /* Madhësia e tekstit */
+  }
+  
+  .navbar a:hover { /* Ndryshimi i ngjyres kur vendoset mouse tek links  */
+   background-color: #000;
+  }
+  
+  .active {  /* Stilimi i linkut qe eshte aktiv */
+   background-color: #6c5b1e;
+  }
+  
+  
+  /* Stili për elementin nav */
+  nav {
+   background-color:white; /* Ngjyra e sfondit */
+   padding: 20px; /* Hapësira e brendshme */
+   display: inline-block; /* Tregon se si duhet të paraqitet */
+   width: 25%; /* Gjerësia e kutisë */
+   vertical-align: top; /* Vendos lartësinë e elementit */
+  }
+  
+  
+  /* Stili për listat e navigimit */
+  nav ul {
+   list-style-type: disc;
+   padding: 0;
+  }
+  
+  
+  /* Stili për çdo artikull në listën e navigimit */
+  nav ul li {
+   margin-bottom: 10px;
+   padding: 1px;
+  }
+  
+  
+  /* Stili për lidhjet në listën e navigimit */
+  nav ul li a {
+   text-decoration: dotted; /* Stili i vijës */
+   color: #133a08; /* Ngjyra e tekstit */
+  }
+  
+  a:hover {
+   color: #8c6c46; /* Ngjyra e tekstit kur mouse është mbi link */
+   padding: 5px; /* Shton një hapësirë 5px rreth link-ut kur mouse është mbi të */
+}
+
+
+ /* navbar link aktiv */
+   .active {
+   background-color: #8c6c46;;
+}
+ 
+  iframe{
+  border: none;
+  }
+
+  h2, h4,h5{ /* Stilojme h2 dhe h4 qe jane titujt e te tre paragrafeve, duke i qenderzuar  */
+  text-align: center;
+  color: #8c6c46;
+  margin-top: 10px;
+  }
+
+  p{  /* Stilojme te tre paragrafet */
+  text-align: justify;
+  color: black;
+  font-size: medium;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+ 
+
+  
+  footer{  /* Stilojme footerin */    
+   /* Stilojme footerin */
+     background:  #795128;
+     color: #fefefe;
+     text-align: center;
+     position: absolute;
+     top: 1250px;
+     height: auto;
+     width: 100vw;
+     left: 0cm;
+
+     padding-top: 2px;
+     }
+   
+   #fundi,#te_drejtat{ /* Stilojme paragrafin e fundit */
+     color: #f6f6f6;
+     text-align: center;
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 16px;
+   }
+   
+   .socials{  /* Sitlojme listen e parendeitur*/
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 3rem 0 1rem 1rem;
+     
+  }
+   
+  .socials li{   /* Stilojme distancen qe do kene li nga njera tjetra */
+     margin:  10px;
+  }
+   
+  .socials a{  /* Stilojme pamjen vizuale te ikonave ngjyrat dhe borderat */
+     text-decoration: none;
+     color: #fff;  /* Ngjyra e ikonave */
+     border: 1.31px solid white;
+     padding: 5px;
+     border-radius: 50%;
+  }
+   
+  .socials a i{  /* Stilojme madhesine e ikonave dhe rratheve ku ngjodhen*/
+     font-size: 1.0rem;
+     width: 20px;
+  }
+   
+  .socials a:hover i{ /* Ndryshimi i ngjyres kur vendoset mouse tek ikonat  */
+     color: #9d6099;
+  }

@@ -1,0 +1,521 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.product-grid {
+    display: flex;/* Përdor Flexbox për paraqitjen e produkteve */
+    flex-wrap: wrap;/* Lejon produktet të shfaqen në rreshta të reja */
+    max-width: 1000px;
+    margin: 20px auto;
+    justify-content: space-between;/* Shpërndan hapësirat midis produkteve */
+}
+.navbar {
+  width: 97%;/* Vendos gjeresine 100% */
+  background-color: #555;
+  overflow: auto;/* Lejon shfaqjen e scroll-it nëse përmbajtja tejkalon gjerësinë e navbar-it */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px; 
+  
+}
+ 
+ .navbar a { /* Stilojme navbar links */
+  float: left; /* Vendos pozicionimin e tekstit majtas */
+  text-align: center; /* Qendron tekstin në qendër të elementit */
+  padding: 12px; /* Shto hapësirë përreth tekstit */
+  color: white; /* Ngjyra e tekstit */
+  text-decoration: none; /* Hiq nënvizimin e lidhjeve */
+  font-size: 17px; /* Madhësia e tekstit */
+ }
+ 
+ .navbar a:hover { /* Ndryshimi i ngjyres kur vendoset mouse tek links  */
+  background-color: #000;
+ }
+ 
+ .active {  /* Stilimi i linkut qe eshte aktiv */
+  background-color: #6c5b1e;
+ }
+ 
+ 
+ /* Stili për elementin nav */
+ nav {
+  background-color:white; /* Ngjyra e sfondit */
+  padding: 20px; /* Hapësira e brendshme */
+  display: inline-block; /* Tregon se si duhet të paraqitet */
+  width: 25%; /* Gjerësia e kutisë */
+  vertical-align: top; /* Vendos lartësinë e elementit */
+ }
+ 
+ 
+ /* Stili për listat e navigimit */
+ nav ul {
+  list-style-type: disc;
+  padding: 0;
+ }
+ 
+ 
+ /* Stili për çdo artikull në listën e navigimit */
+ nav ul li {
+  margin-bottom: 10px;
+  padding: 1px;
+ }
+ 
+ 
+ /* Stili për lidhjet në listën e navigimit */
+ nav ul li a {
+  text-decoration: dotted; /* Stili i vijës */
+  color: #133a08; /* Ngjyra e tekstit */
+ }
+ 
+ a:hover {
+  color: #8c6c46; /* Ngjyra e tekstit kur mouse është mbi link */
+  padding: 5px; /* Shton një hapësirë 5px rreth link-ut kur mouse është mbi të */
+}
+
+
+/* navbar link aktiv */
+  .active {
+  background-color: #8c6c46;;
+}
+
+  
+  /* Add responsiveness - do të shfaqë automatikisht shiritin e navigimit vertikalisht në vend të horizontalisht në ekranet më pak se 500 piksel*/
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+
+
+
+/* per box-et e produkteve */
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 produkte në një rresht */
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Stili për .product elementin */
+/* Stili për .product elementin */
+.product {
+  /* Vendos ngjyrën e sfondit si të bardhë */
+  background-color: #fff;
+  /* Vendos një hapësirë të brendshme prej 10 pikselash nga përmbajtja e elementit deri te kufiri i elementit */
+  padding: 10px;
+  /* Lejon rrumbullakësimin e këndëve të elementit në 5 piksela, duke i dhënë një formë të rrumbullakët */
+  border-radius: 5px;
+  /* Shtohet një hije për elementin me parametrat: nuk ka shkallë horizontale, nuk ka shkallë vertikale, një hije 10 pikselash e zezë dhe një shkallë thellimi prej 10% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Vendos elementin si një element fleksibël, duke e lejuar përdorimin e dizajnit fleksibël */
+  display: flex;
+  /* Vendos renditjen e fëmijëve të elementit fleksibël në drejtim vertikal në vend të drejtimit horizontal */
+  flex-direction: column;
+  /* Vendos se si elementët janë të vendosur në distancë në aksin kryesor, duke i lejuar hapësirë të përpjestuar ndërmjet elementëve */
+  justify-content: space-between;
+  /* Vendos që teksti të jetë i qendruar në qendër të elementit */
+  text-align: center;
+}
+
+
+.product img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto 10px; /* Qendërzimi i fotove në mes horizontalisht */
+    display: block; 
+}
+
+.product-info h3 {
+    flex-grow: 1;
+}
+
+.product-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.sidenav{
+  border-radius: 5px;
+}
+
+
+
+.dropdown-btn {
+  
+    background-color: #8c6c46; 
+    color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .category {
+    font-size: 10px; /* Madhësia e tekstit 10px */
+    display: inline-block; /* Për të aplikuar madhësinë e tekstit */
+    line-height: 1; /* Për të shmangur hapësirat e panevojshme */
+  }
+  .dropdown-btn i {
+    margin-left: 5px;
+  }
+  #textivogel,
+#textivogel1,
+#textivogel2,
+#textivogel3,
+#textivogel4,
+#textivogel5,
+#textivogel6,
+#textivogel7 {
+    font-size: 14px;
+    margin-left: 20px;
+}
+  #textimadh{
+    font-size: 20px;
+  }
+
+
+  .image-container {
+    width: 30%; /* Madhësia e fotos */
+}
+
+.side-image {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Qendro kutinë e kërkimit horizontalisht */
+    margin-top: 20px;
+    
+}
+
+.search-bar {
+    width: 600px; /* Gjatësia e kutisë së kërkimit */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+}
+
+.search-button {
+  padding: 5px 29px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #8c6c46;
+    cursor: pointer;
+}
+
+.category-title {
+    text-align: center; /* Qendro titullin horizontalisht */
+    margin-top: 10px;
+    display: block; /* Bërja e elementin të zërë tërësisht rrjeshtin horizontal */
+}
+
+
+
+
+
+
+
+.sidenav {
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 10px;
+    background: #aa9f91;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f9f8f4;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #52340e;
+  }
+  
+  .main {
+    margin-left: 140px; /* Gjerësia e njëjtë me shiritin anësor + pozicioni majtas në px */
+    font-size: 28px; /* Teksti i zmadhuar për të mundësuar lëvizjen */
+    padding: 0px 10px;
+  }
+  #produkte {
+    text-align: center;
+    color: #009e4f;
+  }
+
+
+  
+
+
+
+#fundi{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #f6f6f6;
+    text-align: center;
+    font-size: medium; 
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0rem 15rem 15rem;
+}
+.socials li{
+    margin:  10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.31px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.0rem;
+    width: 20px;
+   
+}
+.socials a:hover i{
+    color: #533511;
+
+}
+ 
+
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  width: 30%;
+  height: 30%;
+  object-fit: cover; /* Ruaj aspect ratio dhe mbush hapësirën e plotë */
+  margin-left: 200px;
+}
+
+.background-image {
+  position: absolute;
+  bottom: 5px; /* Vendos në fund të containerit */
+  margin-left: 585px;
+  left: 0;
+  width: 40%;
+  height: 98%; /* Përcakto lartësinë e imazhit të sfondit */
+  background-image: url('../imazhe/reklam3.jpg'); /* Rruga drejt imazhit të sfondit */
+  background-size: cover; /* Mbuloje plotësisht hapësirën */
+  background-position: center; /* Qendro imazhin në qendër */
+  opacity: 1; /* Niveli i ndritshimit të imazhit (opsional) */
+}
+
+
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+
+
+/* Stilizimi për formën e porosisë */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;/* Cakton renditjen e modalit para elementeve të tjera */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* Përdorim Flexbox për qendrimin në qendër */
+  justify-content: center; /* Qendrojen horizontale në qendër */
+  align-items: center; /* Qendrojen vertikale në qendër */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Rreshtoni përmbajtjen në qendër */
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.order-button {
+  background-color: #8c6c46;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.order-button:hover {
+  background-color: #7d582c;/* Cakton ngjyrën e sfondit kur kursori kalon mbi butonin */
+}
+
+/* Stilizimi për mesazhin e konfirmimit -----e ke fshi kte me duket*/
+.modal-content p.confirmation-message {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Stilizimi i butonit "Submit" në formën e porosisë */
+.submit-button {
+  background-color: #ffffff;
+  color: #8c6c46;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+}
+
+.submit-button:hover {
+  background-color: #c4ac8f;
+}
+#order-form,
+#order-form2
+{
+  margin-right: 30px;
+  background-color: rgb(254, 254, 254);
+}
+
+
+.modal {
+  display: none;
+  max-height: 100%; /* Limit the maximum height of the modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #8c6c46;
+}
+
+
+
+
+
+
+
+footer{  /* Stilojme footerin */    
+  /* Stilojme footerin */
+    background:  #795128;
+    color: #fefefe;
+    text-align: center;
+    position: absolute;
+    top: 1250px;
+    height: auto;
+    width: 100vw;
+    left: 0cm;
+
+    padding-top: 2px;
+    }
+  
+  #fundi,#te_drejtat{ /* Stilojme paragrafin e fundit */
+    color: #f6f6f6;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  
+  .socials{  /* Sitlojme listen e parendeitur*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 1rem 1rem;
+    
+ }
+  
+ .socials li{   /* Stilojme distancen qe do kene li nga njera tjetra */
+    margin:  10px;
+ }
+  
+ .socials a{  /* Stilojme pamjen vizuale te ikonave ngjyrat dhe borderat */
+    text-decoration: none;
+    color: #fff;  /* Ngjyra e ikonave */
+    border: 1.31px solid white;
+    padding: 5px;
+    border-radius: 50%;
+ }
+  
+ .socials a i{  /* Stilojme madhesine e ikonave dhe rratheve ku ngjodhen*/
+    font-size: 1.0rem;
+    width: 20px;
+ }
+  
+ .socials a:hover i{ /* Ndryshimi i ngjyres kur vendoset mouse tek ikonat  */
+    color: #9d6099;
+ }

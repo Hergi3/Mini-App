@@ -1,0 +1,322 @@
+/* Stili për elementin body */
+ body{
+    margin: 0;
+    padding: 0;
+ } 
+ /* Stili për elementin container */
+ .container{
+  background-color:  white ; /* Ngjyra e sfondit */
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; /* Familja e fontit */
+  margin: 0px; 
+  padding: 0px; 
+ }
+
+
+ .navbar {
+   width: 97%;/* Vendos gjeresine 100% */
+   background-color: #555;
+   overflow: auto;/* Lejon shfaqjen e scroll-it nëse përmbajtja tejkalon gjerësinë e navbar-it */
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 10px; 
+   
+ }
+  
+  .navbar a { /* Stilojme navbar links */
+   float: left; /* Vendos pozicionimin e tekstit majtas */
+   text-align: center; /* Qendron tekstin në qendër të elementit */
+   padding: 12px; /* Shto hapësirë përreth tekstit */
+   color: white; /* Ngjyra e tekstit */
+   text-decoration: none; /* Hiq nënvizimin e lidhjeve */
+   font-size: 17px; /* Madhësia e tekstit */
+  }
+  
+  .navbar a:hover { /* Ndryshimi i ngjyres kur vendoset mouse tek links  */
+   background-color: #000;
+  }
+  
+  .active {  /* Stilimi i linkut qe eshte aktiv */
+   background-color: #6c5b1e;
+  }
+  
+  
+  /* Stili për elementin nav */
+  nav {
+   background-color:white; /* Ngjyra e sfondit */
+   padding: 20px; /* Hapësira e brendshme */
+   display: inline-block; /* Tregon se si duhet të paraqitet */
+   width: 25%; /* Gjerësia e kutisë */
+   vertical-align: top; /* Vendos lartësinë e elementit */
+  }
+  
+  
+  /* Stili për listat e navigimit */
+  nav ul {
+   list-style-type: disc;
+   padding: 0;
+  }
+  
+  
+  /* Stili për çdo artikull në listën e navigimit */
+  nav ul li {
+   margin-bottom: 10px;
+   padding: 1px;
+  }
+  
+  
+  /* Stili për lidhjet në listën e navigimit */
+  nav ul li a {
+   text-decoration: dotted; /* Stili i vijës */
+   color: #133a08; /* Ngjyra e tekstit */
+  }
+  
+  a:hover {
+   color: #8c6c46; /* Ngjyra e tekstit kur mouse është mbi link */
+   padding: 5px; /* Shton një hapësirë 5px rreth link-ut kur mouse është mbi të */
+}
+
+
+ /* navbar link aktiv */
+   .active {
+   background-color: #8c6c46;;
+}
+
+ /* Linja horizontale */
+ hr{
+ width: 1460px; /* Gjerësia e linjës */
+ }
+
+
+ /* Stili për seksionet */
+ section {
+  padding: 20px; /* Hapësira e brendshme */
+  margin: 10px; /* Hapësira përreth */
+  width: 96%; /* Gjerësia e seksionit */
+  vertical-align: top; /* Vendos lartësinë */
+  display: inline-block; /* Tregon se si duhet të paraqitet */
+ }
+
+
+ /* Stili për imazhet */
+ .photo {
+  height: 329px; /* Lartësia */
+  width: 350px; /* Gjerësia */
+  display: inline-block; /* Tregon se si duhet të paraqitet */
+  margin: 40px ; /* Margjina */
+  margin-top: 40px; /* Margjina në krye */
+  float: left; /* Vendosja e imazhit në të majtë */
+  padding-bottom: 1px; /* Hapësira e poshtme */
+  box-shadow: 0 0 10px #8c6c46; /* Efekti i hijes */
+  padding: 0px; /* Mospërjashtimi i brendshëm */
+  border-radius: 8px; }
+
+
+
+
+ /* Stili për kutinë e formularit */
+ .form-box { 
+  float: right; /* Vendosja e kutisë së formularit në të djathtë */
+  background-color: #fff; 
+  box-shadow: 0 0 10px #8c6c46; /* Efekti i driehijes */
+  padding: 9px; /* Hapësira e brendshme */
+  border-radius: 8px; /* Rrethi i shkëlqyer */
+  width: 350px; /* Gjerësia e kutisë së formularit */
+  margin-right: 40px; /* Margjina në të djathtë */
+  margin-top: 35px; /* Margjina në krye */
+ } 
+
+
+ /* Stili për konteinerin e formës */
+ .form-container {
+  display: none; /* Nuk shfaqet si fillim*/
+  position: fixed; 
+  z-index: 1; /* Z-index për të vendosur mbi elementet e tjera */
+  left: 0; /* Vendosja e majtas */
+  top: 0; /* Vendosja në krye */
+  width: 100%; /* Gjerësia e plotë */
+  height: 100%; /* Lartësia e plotë */
+  overflow: auto; /* Mundëson skrollet e nevojshme */
+  background-color: rgba(0,0,0,0.4); /* Ngjyra e sfondit */
+  padding-top: 60px; /* Hapësira e sipërme e padding */
+ }
+
+ /* Stili për përmbajtjen e formës */
+ .form-content {
+  background-color: #fefefe; /* Ngjyra e sfondit të përmbajtjes */
+  margin: 5% auto; /* Marginat lart dhe poshtë */
+  padding: 20px; /* Hapësira e padding */
+  border: 1px solid #888; /* Kufiri i përmbajtjes */
+  width: 80%; /* Gjerësia e përmbajtjes */
+ }
+
+
+ /* Stili për formularin */
+ form { 
+  max-width: 350px; /* Gjerësia maksimale */
+  height: 330px; /* Lartësia */
+  margin:10px 10px; /* Margjina përreth */
+  float: right; /* Vendosja e formularit në të djathtë */
+  padding-right: 13px; /* Hapësira e djathtë */
+ } 
+ 
+
+ /* Stili për etiketat */
+ label { 
+  display: block; /* Tregon se si duhet të paraqiten etiketat */
+  float: left; /* Vendosja e etiketave në të majtë */
+  margin-left: 2px; /* Margjina në të majtë */
+  margin-top: 7px; 
+  font-size: 16.5px; 
+  color: #8c6c46; 
+  font-weight: 600; /* Pesha e tekstit */
+ } 
+  
+ 
+  /* Stili për input dhe textarea */
+ input, textarea { 
+  width: 100%; /* Gjerësia e fushave të inputit */
+  padding: 4px; /* Hapësira e brendshme */
+  margin-left: 2px; /* Margjina majtas */
+  margin-bottom: 9.8px; 
+  box-sizing: border-box; /* Caktoni kufirin e kutisë */
+  border-radius: 5px; /* Rrethi i shkëlqyer */
+  font-size: 0.9rem; /* Madhësia e fontit */
+  color:black; 
+ } 
+
+
+ /* Stili për tekstin e vende të zbrazëta */
+ ::placeholder {
+  color:black; /* Ngjyra e tekstit të vendeve të zbrazëta */
+  font-size: 0.9rem; /* Madhësia e fontit */
+ 
+ }
+
+
+ /* Stili për butonin */
+ button { 
+  background-color: #8c6c46; 
+  color: #fff; /* Ngjyra e tekstit */
+  padding: 8px; /* Hapësira e brendshme e butonit */
+  border: none; 
+  margin-top: 200px; /* Margjina në krye */
+  border-radius: 10px; 
+  cursor: pointer; /* Kursori */
+  width: 200px; /* Gjerësia e butonit */
+  font-size: 15px; /* Madhësia e fontit */
+  margin-left: auto; /* Vendosja e butonit në të djathtë */
+  margin-right: 150px; /* Margjina në të djathtë */
+  display: flex; 
+  justify-content: center; /* Vendosja e butonit në qendër */
+ } 
+
+
+ /* Stili për butonin e përgjithshëm */
+ .btn {
+  background-color: #8c6c46; /* Ngjyra e sfondit të butonit */
+  color: #fff; /* Ngjyra e tekstit */
+  padding: 8px; /* Hapësira e brendshme e butonit */
+  border: none; /* Pamja e kufirit */
+  margin-top: 9px; /* Margjina në krye */
+  border-radius: 10px;
+  cursor: pointer; /* Kursori */
+  width: 100%; /* Gjerësia e butonit */
+  font-size: 15px; /* Madhësia e fontit */
+ }
+
+
+ /* Stili për hoverat mbi butonin */
+ button:hover { 
+  background-color: #8c6c46; 
+  border: none; 
+ } 
+
+
+ /* Stili për butonin e mbylljes */
+ .close {
+  color: #0c5502; /* Ngjyra e tekstit */
+  float: right; /* Vendosja e butonit të mbylljes në të djathtë */
+  font-size: 28px; /* Madhësia e fontit */
+  font-weight: bold; /* Trashësia e tekstit */
+ }
+
+ /* Efektet e butonit të mbylljes kur kalohet me kurorë mbi të ose fokusohet */
+ .close:hover,
+ .close:focus {
+  color: black; /* Ndryshimi i ngjyrës së tekstit */
+  text-decoration: none; /* Fshirja e nënvizimit */
+  cursor: pointer; /* Kursori ndryshohet në një shigjetë për t'u treguar se është i klikueshëm */
+ }
+
+
+
+ /* Stili për elementet me ID ePara, eDyta, eTreta, eKaterta, ePesta, eGjashta, titull */
+ #ePara, #eDyta, #eTreta, #eKaterta, #ePesta, #titull {
+  color:#8c6c46; /* Ngjyra e tekstit */
+ }
+
+ /* Stili për paragrafet */
+ p {
+  color: black; /* Ngjyra e tekstit */
+  font-size: medium; /* Madhësia e fontit */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Familja e fontit */
+  text-align: justify; /* Justifikimi i tekstit */
+ } 
+
+  
+  
+ footer{  /* Stilojme footerin */    
+   /* Stilojme footerin */
+     background:  #795128;
+     color: #fefefe;
+     text-align: center;
+     position: absolute;
+     top: 3400px;
+     height: auto;
+     width: 100vw;
+     left: 0cm;
+
+     padding-top: 2px;
+     }
+   
+   #fundi,#te_drejtat{ /* Stilojme paragrafin e fundit */
+     color: #f6f6f6;
+     text-align: center;
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 16px;
+   }
+   
+   .socials{  /* Sitlojme listen e parendeitur*/
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 3rem 0 1rem 1rem;
+     
+  }
+   
+  .socials li{   /* Stilojme distancen qe do kene li nga njera tjetra */
+     margin:  10px;
+  }
+   
+  .socials a{  /* Stilojme pamjen vizuale te ikonave ngjyrat dhe borderat */
+     text-decoration: none;
+     color: #fff;  /* Ngjyra e ikonave */
+     border: 1.31px solid white;
+     padding: 5px;
+     border-radius: 50%;
+  }
+   
+  .socials a i{  /* Stilojme madhesine e ikonave dhe rratheve ku ngjodhen*/
+     font-size: 1.0rem;
+     width: 20px;
+  }
+   
+  .socials a:hover i{ /* Ndryshimi i ngjyres kur vendoset mouse tek ikonat  */
+     color: #9d6099;
+  }
+
+

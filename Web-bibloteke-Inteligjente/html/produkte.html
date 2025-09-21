@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bibloteka</title>
+    <link rel="stylesheet" href="../css/produkte.css">
+    <script src="../js/produkte.js"></script>
+    <!-- vendosja e librarive -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a  href="../html/kk.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="../html/about.html"><i class="fa fa-info"></i> About</a>
+        <a href="../html/Sherbime.html"><i class="fa fa-cogs"></i> Shëbime</a>
+        <a class="active" href="../html/produkte.html"><i class="fa fa-cart-plus"></i> Produkte</a>
+        <a href="../html/kontakt.html"><i class="fa fa-map-marker"></i> Kontakte</a>
+
+      </div>
+
+
+      <div class="search-container">
+        <input type="text" placeholder="Kërko..." class="search-bar">
+        <button type="button" class="search-button">Kërko</button>
+    </div>
+
+
+    
+
+
+<!-- sidenav -->
+    <div class="sidenav">
+        <a href="#" id="textimadh">Librat</a>
+        <a href="" class="dropdown-btn"> Letërsi <i class="fa fa-caret-down"></i> </a>
+        <a href="#"  id="textivogel" class="category">Romanet klasike</a>
+            <a href="#" id="textivogel1" class="category">Romanet bashkëkohore</a>
+            <a href="#" id="textivogel2" class="category">Poezia</a>
+            <a href="#" id="textivogel2" class="category">Dramat</a>
+            <a href="#" id="textivogel2" class="category">Ese dhe kritikë letrare</a>
+            <a href="" class="dropdown-btn">Shkencë<i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-container">
+            <a href="#" id="textivogel3" class="category">Shkencat natyrore</a>
+            <a href="#" id="textivogel4" class="category">Teknologji dhe inxhinieri</a>
+            <a href="#" id="textivogel4" class="category">Inteligjenca artificiale dhe informatika</a>
+            <a href="#" id="textivogel4" class="category">Astronomia dhe hapësira</a>
+            <a href="#" id="textivogel4" class="category">Mjekësia dhe shkenca shëndetësore</a>
+        </div>
+        <a href="" class="dropdown-btn">Te tjerë <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-container">
+            <a href="#" id="textivogel5" class="category">Psikologjia</a>
+            <a href="#" id="textivogel6" class="category">Sociologjia</a>
+            <a href="#" id="textivogel7" class="category">Politika dhe marrëdhëniet ndërkombëtare</a>
+            <a href="#" id="textivogel5" class="category">Studime gjinore dhe diversiteti</a>
+            <a href="#" id="textivogel6" class="category">Ekonomia dhe biznesi</a>
+        </div>
+        </div>
+
+
+
+    <h1 class="category-title">Të gjitha kategoritë <i class="fa fa-cart-plus"></i></h1>
+
+    <div class="product-box">
+        <div class="product">
+            <img src="../imazhe/temjeret.jpeg" alt="Book 1" class="product-image">
+            <div class="product-info">
+                <h3>"Të Mjerët" - Victor Hugo</h3>
+                <p>Një kryevepër e letërsisë botërore që tregon historinë e Jean Valjean-it dhe përpjekjet e tij për shëlbim në një shoqëri të padrejtë.</p>
+                <button class="order-button">Paguaj</button>
+                <button class="order-button">Rezervo</button>
+            </div>
+        </div>       
+             <!-- Modal i përbashkët për të gjitha produktet -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal')">&times;</span>
+        <h2>Plotësoni të dhënat për porosinë</h2>
+       
+            
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/1984george.jpg" alt="Book 2" class="product-image">
+    <div class="product-info">
+        <h3>"1984" - George Orwell</h3>
+        <p>Një roman distopik që eksploron një shoqëri të kontrolluar totalisht nga një regjim autoritar dhe manipulimi i së vërtetës.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+<div class="product">
+    <img src="../imazhe/prideand.jpg" alt="Book 3" class="product-image">
+    <div class="product-info">
+        <h3>"Pride and Prejudice" - Jane Austen</h3>
+        <p>Nje histori dashurie dhe satire sociale mbi klasat dhe zakonet e Anglisë në shekullin e 19-të.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/njeqindvjet.jpg" alt="Book 4" class="product-image">
+    <div class="product-info">
+        <h3>"Njëqind Vjet Vetmi" - Gabriel García Márquez</h3>
+        <p>Një sagë magjepsëse për familjen Buendía dhe historinë e qytetit të tyre Macondo.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/krimdhendeshkim.jpg" alt="Book 5" class="product-image">
+    <div class="product-info">
+        <h3>"Krim dhe Ndëshkim" - Fyodor Dostoevsky</h3>
+        <p>Një roman klasik që eksploron moralin, fajin dhe shëlbimin përmes historisë së Raskolnikov-it.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/alkimisti.jpg" alt="Book 6" class="product-image">
+    <div class="product-info">
+        <h3>"Alkimisti" - Paulo Coelho</h3>
+        <p>Një rrëfim frymëzues për ndjekjen e ëndrrave dhe gjetjen e thesarit të brendshëm.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/hamleti.jpg" alt="Book 7" class="product-image">
+    <div class="product-info">
+        <h3>"Hamleti" - William Shakespeare</h3>
+        <p>Tragjedia klasike e princit të Danimarkës që lufton me hakmarrjen, tradhtinë dhe dilemën morale.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="../imazhe/rudinacupi.jpg" alt="Book 8" class="product-image">
+    <div class="product-info">
+        <h3>"Fëmijët e Rrugës" - Rudina Çupi</h3>
+        <p>Një roman i thellë mbi sfidat e fëmijëve të pastrehë dhe fuqinë e shpresës.</p>
+        <button class="order-button">Paguaj</button>
+        <button class="order-button">Rezervo</button>
+    </div>
+</div>
+</div>
+
+
+
+        
+                <!-- Shto produkte te tjera ketu -->
+                    
+            </div>
+
+
+
+            <footer>
+                <h3>Bibloteka </h3> <!--Krijojme pjesen fundore te webit-->
+        
+                <p id="fundi">
+        
+                    "Biblioteka jonë ofron një mundësi të shkëlqyer për studim dhe hulumtim, duke siguruar një koleksion të pasur librash, burimesh dhe aktivitete kulturore. Ne jemi të përkushtuar për të mbështetur vizitorët tanë në zhvillimin e tyre intelektual dhe ofrojmë shërbime të ndryshme, duke përfshirë mundësi për rezervimin e librave, organizimin e ngjarjeve dhe aktiviteteve edukative.
+                     Shpresojmë që kjo faqe t'ju ndihmojë të gjeni informacionin që kërkoni dhe t'ju nxisë të shijoni çdo moment të eksperiencës suaj në bibliotekën tonë."</p>
+            <ul class="socials"> <!--Krijojme listen e rrjeteve sociale te wevit ku do kontaktojne klientet-->
+                <li><a href="https://web.facebook.com/?_rdc1&_rdr"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/?next=%2F"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/en/"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://login.yahoo.com/"><i class="fab fa-yahoo"></i></a></li>
+            </ul>
+            <p id="te_drejtat">&copy;Të gjitha të drejtat e rezervuara</p> <!--Copyright-->
+            </footer>
+</body>
+</html>
